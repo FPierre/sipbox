@@ -1,28 +1,33 @@
 <template lang='pug'>
 #app
-  .container
-    .row
-      .col.s3
-        .card
-          .card-image
-            img(src='./assets/logo.png')
-            span.card-title Card Title
-
-            a.btn-floating.halfway-fab.waves-effect.waves-light.teal.lighten-2
-              i.material-icons phone
-
-          .card-content
-            p I am a very simple card
+  call-button
 </template>
 
 <script>
 import 'materialize-css/bin/materialize.css'
 import 'materialize-css/bin/materialize.js'
 
+import CallButton from './components/CallButton'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    CallButton
+  }
 }
 </script>
 
 <style>
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 </style>
