@@ -8,6 +8,9 @@
 <script>
 import Hello from './components/Hello'
 
+import 'materialize-css/bin/materialize.css'
+import 'materialize-css/bin/materialize.js'
+
 export default {
   name: 'app',
   components: {
