@@ -1,31 +1,28 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
-  </div>
+<template lang='pug'>
+#app
+  .container
+    .row
+      .col.s3
+        .card
+          .card-image
+            img(src='./assets/logo.png')
+            span.card-title Card Title
+
+            a.btn-floating.halfway-fab.waves-effect.waves-light.teal.lighten-2
+              i.material-icons phone
+
+          .card-content
+            p I am a very simple card
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 import 'materialize-css/bin/materialize.css'
 import 'materialize-css/bin/materialize.js'
 
 export default {
-  name: 'app',
-  components: {
-    Hello
-  }
+  name: 'app'
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
